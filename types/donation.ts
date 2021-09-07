@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import { ObjectId } from "mongoose";
 import { Option } from "./listing";
 
 export enum PeriodFilters {
@@ -102,10 +102,10 @@ export interface DonationRecap {
 }
 
 export interface DonationType {
-  _id: string | mongoose.Types.ObjectId;
+  _id: string | ObjectId;
   senderHerotag?: string;
   senderErdAdress: string;
-  receiverUserId: string | mongoose.Types.ObjectId;
+  receiverUserId: string | ObjectId;
   receiverHerotag: string;
   receiverErdAdress: string;
   amount: number;

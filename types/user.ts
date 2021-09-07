@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+import { ObjectId } from "mongoose";
 import { IftttParticleData } from "./ifttt";
 import { OverlayData } from "./overlays";
 
@@ -10,7 +9,7 @@ export enum UserAccountStatus {
 }
 
 export interface UserType {
-  _id: string | mongoose.Types.ObjectId;
+  _id: string | ObjectId;
   password?: string;
   pendingPassword?: string;
   herotag: string;
