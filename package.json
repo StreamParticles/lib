@@ -1,17 +1,25 @@
 {
-  "name": "lib",
-  "version": "1.0.0",
-  "description": "StreamParticles shared code between back & front",
+  "name": "@streamparticles/lib",
+  "version": "0.1.0",
+  "description": "StreamParticles shared utilities",
   "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StreamParticles/lib.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "StreamParticles",
   "license": "ISC",
   "devDependencies": {
     "@types/mongoose": "^5.11.97"
   },
   "dependencies": {
     "mongoose": "^6.0.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/StreamParticles/lib/issues"
+  },
+  "homepage": "https://github.com/StreamParticles/lib#readme"
 }
