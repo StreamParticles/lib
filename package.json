@@ -1,8 +1,9 @@
 {
   "name": "@streamparticles/lib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "StreamParticles shared utilities",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "source": "index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StreamParticles/lib.git"
