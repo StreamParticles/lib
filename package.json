@@ -1,8 +1,8 @@
 {
   "name": "@streamparticles/lib",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "StreamParticles shared utilities",
-  "main": "dist/index.js",
+  "main": "out/src/index.js",
   "source": "index.ts",
   "repository": {
     "type": "git",
@@ -14,10 +14,14 @@
   "author": "StreamParticles",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "v5.13.3"
+    "mongoose": "v5.13.3",
+    "typescript": "4.4.2"
   },
   "bugs": {
     "url": "https://github.com/StreamParticles/lib/issues"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/StreamParticles/lib#readme"
 }
