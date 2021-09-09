@@ -1,3 +1,8 @@
+export enum Themes {
+  LIGHT = "LIGHT",
+  DARK = "DARK",
+}
+
 export enum TextAligns {
   LEFT = "LEFT",
   CENTER = "CENTER",

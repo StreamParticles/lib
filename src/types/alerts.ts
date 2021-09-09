@@ -1,3 +1,4 @@
+import { AnimatedText } from "types";
 import {
   BaseVariationType,
   WithVariationsWidget,
@@ -17,7 +18,7 @@ export interface AlertVariation extends BaseVariationType {
   top?: number;
   audio?: Audio;
   image?: Image;
-  text?: Text;
+  text?: AnimatedText;
 }
 
 export type AlertsSetWidget = WithVariationsWidget<AlertVariation>;
