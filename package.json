@@ -1,6 +1,6 @@
 {
   "name": "@streamparticles/lib",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "StreamParticles shared utilities",
   "main": "out/index.js",
   "source": "src/index.ts",
@@ -9,7 +9,9 @@
     "url": "git+https://github.com/StreamParticles/lib.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish:patch": "tsc && npm version patch  && npm publish",
+    "publish:minor": "tsc && npm version minor  && npm publish",
+    "publish:major": "tsc && npm version major  && npm publish"
   },
   "author": "StreamParticles",
   "license": "ISC",
