@@ -2,7 +2,6 @@ export enum TextAligns {
   LEFT = "LEFT",
   CENTER = "CENTER",
   RIGHT = "RIGHT",
-  JUSTIFY = "JUSTIFY",
 }
 
 interface LeftTop {

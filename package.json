@@ -1,6 +1,6 @@
 {
   "name": "@streamparticles/lib",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "StreamParticles shared utilities",
   "main": "out/index.js",
   "source": "src/index.ts",
@@ -14,7 +14,7 @@
   "author": "StreamParticles",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "v5.13.3",
+    "mongoose": "5.13.3",
     "typescript": "4.4.2"
   },
   "bugs": {
