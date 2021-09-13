@@ -1,3 +1,4 @@
+import { Position } from "types";
 import { SingleWidget, SingleWidgetPosition } from "./overlays";
 import { Text } from "./style";
 
@@ -85,6 +86,7 @@ export interface DonationBar {
   height?: number;
   top?: number;
   left?: number;
+  donationBarItemPosition: Position;
   cursor?: { source?: [MediaSource]; scale?: number };
   border?: {
     color?: string;
