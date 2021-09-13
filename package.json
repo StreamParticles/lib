@@ -1,6 +1,6 @@
 {
   "name": "@streamparticles/lib",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "description": "StreamParticles shared utilities",
   "main": "out/index.js",
   "source": "src/index.ts",
