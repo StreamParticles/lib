@@ -11,17 +11,13 @@ import {
 import { Position } from "./style";
 
 export type DrawerData = {
-  kind: DrawerKinds.ALERTS_SET;
+  kind: WidgetsKinds.ALERTS;
   widgetId: string;
 };
 
 export type ModalData =
   | { kind: ModalKinds.ALERT_VARIATION; data: AlertVariation }
   | { kind: ModalKinds.DONATION_BAR; data: DonationBar };
-
-export enum DrawerKinds {
-  "ALERTS_SET" = "ALERTS_SET",
-}
 
 export enum ModalKinds {
   "ALERT_VARIATION" = "ALERT_VARIATION",

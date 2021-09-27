@@ -101,4 +101,6 @@ export interface DonationBar {
 
 export type DonationBarWidget = SingleWidget<DonationBar>;
 
-export type DonationBarPosition = SingleWidgetPosition<"text">;
+export type DonationBarPosition = SingleWidgetPosition<
+  "text" | "donationBarItemPosition"
+>;
