@@ -8,6 +8,7 @@
       "declaration": true, 
       "declarationMap": true,
       "sourceMap": true,
+      "esModuleInterop": true //https://stackoverflow.com/questions/57635797/es6-module-mongoose-has-no-default-export
     },
     "include": [
       "src"
