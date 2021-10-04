@@ -8,6 +8,7 @@ import {
   DonationBarPosition,
   DonationBarWidget,
 } from "./donationBar";
+import { Id } from "./mongoose";
 import { Position } from "./style";
 
 export type DrawerData = {
@@ -62,17 +63,17 @@ interface TempWidget {
 }
 
 export interface WidgetType extends TempWidget {
-  _id: string;
+  _id: Id;
   name: string;
   isActive: boolean;
 }
 
 export interface WidgetPositionType extends TempWidget {
-  _id: string;
+  _id: Id;
 }
 
 export interface BaseVariationType {
-  _id: string;
+  _id: Id;
   name: string;
   // TO-DO remove "?" to make mandatory
   trigger?: RequiredAmountTrigger | GoalStepReachedTrigger | VipDonation;
@@ -92,7 +93,7 @@ type ElementPosition = Partial<Position>;
 export type WithVariationWidgetPosition<ChildrenFields extends string> =
   WidgetPositionType & {
     variations?: (ElementPosition & {
-      _id: string;
+      _id: Id;
     } & Partial<Record<ChildrenFields, ElementPosition>>)[];
   };
 
@@ -110,7 +111,7 @@ export type SingleWidget<T> = WidgetType & {
 export type SingleWidgetPosition<ChildrenFields extends string> =
   WidgetPositionType & {
     data: ElementPosition & {
-      _id: string;
+      _id: Id;
     } & Partial<Record<ChildrenFields, ElementPosition>>;
   };
 
@@ -118,7 +119,7 @@ export type Widget = DonationBarWidget | AlertsSetWidget;
 export type WidgetPosition = DonationBarPosition | AlertsSetWidgetPosition;
 
 export interface OverlayData {
-  _id: string;
+  _id: Id;
   name: string;
   color: string;
   generatedLink: string;

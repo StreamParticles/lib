@@ -1,4 +1,5 @@
 import { AnimatedText } from "types";
+import { Id } from "./mongoose";
 import {
   BaseVariationType,
   WithVariationsWidget,
@@ -7,7 +8,7 @@ import {
 import { Audio, Image, Text } from "./style";
 
 export interface AlertVariation extends BaseVariationType {
-  _id: string;
+  _id: Id;
   color?: string;
   requiredAmount?: number;
   chances?: number;

@@ -1,4 +1,5 @@
-import { Position } from "types";
+import { MediaSource, Position } from "types";
+import { Id } from "./mongoose";
 import { SingleWidget, SingleWidgetPosition } from "./overlays";
 import { Text } from "./style";
 
@@ -78,7 +79,7 @@ interface Reaction {
 }
 
 export interface DonationBar {
-  _id: string;
+  _id: Id;
   display?: LineDisplay | CircleDisplay;
   amountDisplay?: InBarAmountDisplay;
   goalAmount?: number;

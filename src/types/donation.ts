@@ -1,5 +1,5 @@
-import { ObjectId } from "mongoose";
 import { Option } from "./listing";
+import { Id } from "./mongoose";
 
 export enum PeriodFilters {
   ALL_TIME = "ALL_TIME",
@@ -102,10 +102,10 @@ export interface DonationRecap {
 }
 
 export interface DonationType {
-  _id: string | ObjectId;
+  _id: Id;
   senderHerotag?: string;
   senderErdAdress: string;
-  receiverUserId: string | ObjectId;
+  receiverUserId: Id;
   receiverHerotag: string;
   receiverErdAdress: string;
   amount: number;
