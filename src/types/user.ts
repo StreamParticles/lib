@@ -19,11 +19,12 @@ export interface UserType {
   passwordEditionVerificationReference?: string;
   verificationStartDate?: string;
   passwordEditionVerificationStartDate?: string;
-  apiKey?: string;
   integrations?: {
     ifttt?: IftttParticleData;
     overlays?: OverlayData[];
     minimumRequiredAmount?: number;
+    webhooks?: string[];
+    apiKey?: string;
     tinyAmountWording?: {
       ceilAmount: number;
       wording: string;

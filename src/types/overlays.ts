@@ -13,7 +13,7 @@ import { Position } from "./style";
 
 export type DrawerData = {
   kind: WidgetsKinds.ALERTS;
-  data: WithVariationsWidget<any>;
+  widgetId: string;
 };
 
 export type ModalData =
