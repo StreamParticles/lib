@@ -19,6 +19,7 @@ export interface UserType {
   passwordEditionVerificationReference?: string;
   verificationStartDate?: string;
   passwordEditionVerificationStartDate?: string;
+  apiKey?: string;
   integrations?: {
     ifttt?: IftttParticleData;
     overlays?: OverlayData[];
