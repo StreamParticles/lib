@@ -1,7 +1,6 @@
-import { MediaSource, Position } from "types";
 import { Id } from "./mongoose";
 import { SingleWidget, SingleWidgetPosition } from "./overlays";
-import { Text } from "./style";
+import { MediaSource, Position, Text } from "./style";
 
 export enum DonationBarDisplays {
   "VERTICAL" = "VERTICAL",

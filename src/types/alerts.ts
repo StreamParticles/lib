@@ -1,11 +1,10 @@
-import { AnimatedText } from "types";
 import { Id } from "./mongoose";
 import {
   BaseVariationType,
   WithVariationsWidget,
   WithVariationWidgetPosition,
 } from "./overlays";
-import { Audio, Image, Text } from "./style";
+import { AnimatedText, Audio, Image } from "./style";
 
 export interface AlertVariation extends BaseVariationType {
   _id: Id;
