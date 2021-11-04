@@ -9,6 +9,8 @@
     "url": "git+https://github.com/StreamParticles/lib.git"
   },
   "scripts": {
+    "build": "rm -rf out && tsc",
+    "lint": "eslint src --ext .ts",
     "publish:patch": "tsc && npm version patch  && npm publish",
     "publish:minor": "tsc && npm version minor  && npm publish",
     "publish:major": "tsc && npm version major  && npm publish"
