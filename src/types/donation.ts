@@ -97,8 +97,8 @@ export interface TopDonator {
 
 export interface DonationRecap {
   allTime: number;
-  lastMonth: number;
-  lastStream: number;
+  thisMonth: number;
+  thisStream: number;
 }
 
 export interface DonationType {
