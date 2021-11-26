@@ -123,5 +123,5 @@ export interface OverlayData {
   name: string;
   color: string;
   generatedLink: string;
-  widgets: Widget[];
+  widgets: Id[];
 }

@@ -1,6 +1,5 @@
 import { IftttParticleData } from "./ifttt";
 import { Id } from "./mongoose";
-import { OverlayData } from "./overlays";
 
 export enum UserAccountStatus {
   "VERIFIED" = "VERIFIED",
@@ -21,7 +20,7 @@ export interface UserType {
   passwordEditionVerificationStartDate?: string;
   integrations?: {
     ifttt?: IftttParticleData;
-    overlays?: OverlayData[];
+    overlays?: Id[];
     minimumRequiredAmount?: number;
     webhooks?: string[];
     apiKey?: string;
