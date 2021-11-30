@@ -66,6 +66,7 @@ export interface WidgetType extends TempWidget {
   _id: Id;
   name: string;
   isActive: boolean;
+  userId: Id;
 }
 
 export interface WidgetPositionType extends TempWidget {
@@ -124,4 +125,5 @@ export interface OverlayData {
   color: string;
   generatedLink: string;
   widgets: Id[];
+  userId: Id;
 }
